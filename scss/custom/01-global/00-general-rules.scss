@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Alex Brush';
+  src: url(../fonts/Alex_Brush/AlexBrush-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Poppins Light';
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+p {
+    margin: 0;
+    font-family: 'Poppins';
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Montserrat';
+  }
+
+  h1 + *, h2 + *, h3 + *, h4 + *, h5 + *, h6 + * {
+    margin-top: 15px;
+  }
+
+  ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  .btn{
+    font-family: 'Poppins Light';
+  }
+
+  a{
+    text-decoration: none;
+  }

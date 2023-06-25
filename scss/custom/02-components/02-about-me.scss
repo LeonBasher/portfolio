@@ -1,0 +1,78 @@
+.about-me-section{
+  .image-col{
+    + *{
+      margin-top: 20px;
+    }
+  }
+
+  .picture-container{
+    margin: 0 auto;
+
+    img{
+      width: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .about-info{
+    .general-info{
+      * + *{
+        margin-top: 15px;
+      }
+  
+      +*{
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .information-col{
+    .col-md-6{
+      ul{
+        li{
+          p{
+            .info{
+              color: #df2020;
+              text-transform: capitalize;
+
+              &::after{
+                content: ": ";
+              }
+            }
+          }
+
+          +li{
+            margin-top: 5px;
+          }
+        }
+      }
+
+      + .col-md-6{
+        margin-top: 5px;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md){
+  .about-me-section{  
+    .information-col{
+      .col-md-6{
+        + .col-md-6{
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .about-me-section{  
+    .image-col{
+      +*{
+        margin-top: 0;
+      }
+    }
+  }
+}
