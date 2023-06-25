@@ -3,7 +3,12 @@
 */
 .background-theme-dark{
   background-color: $tertiary;
-  color: white;
+  color: rgb(220, 220, 220);
+}
+
+.background-theme-light{
+  background-color: rgb(220, 220, 220);
+  color: $primary;
 }
 
 /*
@@ -13,12 +18,10 @@
     &.general-container{
       padding: 70px 40px;
     }
+
+    &.container-fuild{
+      
+    }
   }
 
-  .container-fluid{
-    max-width: 1340px;
-  }
 
-  .superior-dropdown-container{
-    padding: 10px 0;
-  }

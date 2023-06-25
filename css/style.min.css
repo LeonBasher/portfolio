@@ -9340,25 +9340,17 @@ a {
 */
 .background-theme-dark {
   background-color: #111111e6;
-  color: white; }
+  color: gainsboro; }
+
+.background-theme-light {
+  background-color: gainsboro;
+  color: #424242; }
 
 /*
 * Containers
 */
 .container.general-container {
   padding: 70px 40px; }
-
-
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl,
-.container-xxl {
-  max-width: 1340px; }
-
-.superior-dropdown-container {
-  padding: 10px 0; }
 
 .hero {
   height: 500px; }
