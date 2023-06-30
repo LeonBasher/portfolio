@@ -40,6 +40,7 @@
         }
 
         .hero-title{
+          font-size: 2rem;
           text-transform: capitalize;
 
           span{
@@ -62,6 +63,16 @@
 @include media-breakpoint-up(md){
   .hero{
     height: 700px;
+
+    .hero-background{
+      .positioner{
+        .hero-info{
+          .hero-title{
+            font-size: 2.25rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -78,7 +89,7 @@
           }
   
           .hero-title{
-            font-size: 60px;
+            font-size: 2.75rem;
           }
 
           p{

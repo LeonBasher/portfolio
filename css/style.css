@@ -9384,6 +9384,7 @@ a {
         .hero .hero-background .positioner .hero-info .hero-little-text {
           display: block; }
         .hero .hero-background .positioner .hero-info .hero-title {
+          font-size: 2rem;
           text-transform: capitalize; }
           .hero .hero-background .positioner .hero-info .hero-title span {
             color: #df2020; }
@@ -9394,7 +9395,9 @@ a {
 
 @media (min-width: 768px) {
   .hero {
-    height: 700px; } }
+    height: 700px; }
+    .hero .hero-background .positioner .hero-info .hero-title {
+      font-size: 2.25rem; } }
 
 @media (min-width: 1024px) {
   .hero {
@@ -9402,7 +9405,7 @@ a {
     .hero .hero-background .positioner .hero-info .hero-little-text {
       font-size: 20px; }
     .hero .hero-background .positioner .hero-info .hero-title {
-      font-size: 60px; }
+      font-size: 2.75rem; }
     .hero .hero-background .positioner .hero-info p {
       font-size: 30px; }
     .hero .hero-background .positioner .hero-info .hero-button .btn {
