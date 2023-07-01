@@ -16,7 +16,7 @@
 */
 .container{
     &.general-container{
-      padding: 70px 40px;
+      padding: 70px 15px;
     }
 
     &.container-fuild{
@@ -24,4 +24,26 @@
     }
   }
 
+  @include media-breakpoint-up(md){
+    .container{
+      &.general-container{
+        padding: 70px 40px;
+      }
+  
+      &.container-fuild{
+        
+      }
+    }
+  }
 
+  @include media-breakpoint-up(lg){
+    .container{
+      &.general-container{
+        padding: 70px 90px;
+      }
+  
+      &.container-fuild{
+        
+      }
+    }
+  }

@@ -9350,7 +9350,15 @@ a {
 * Containers
 */
 .container.general-container {
-  padding: 70px 40px; }
+  padding: 70px 15px; }
+
+@media (min-width: 768px) {
+  .container.general-container {
+    padding: 70px 40px; } }
+
+@media (min-width: 1024px) {
+  .container.general-container {
+    padding: 70px 90px; } }
 
 .hero {
   height: 500px; }
@@ -9380,7 +9388,9 @@ a {
       transform: translateY(-50%);
       z-index: +2; }
       .hero .hero-background .positioner .hero-info {
-        color: white; }
+        color: white;
+        padding-top: 0;
+        padding-bottom: 0; }
         .hero .hero-background .positioner .hero-info .hero-little-text {
           display: block; }
         .hero .hero-background .positioner .hero-info .hero-title {
