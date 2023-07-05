@@ -48,6 +48,12 @@
           span{
             color: $secondary;
           }
+
+          +p{
+            font-size: 1.375rem;
+            font-weight: 600;
+            text-shadow:  2px 1px rgba(var(--bs-black-rgb), 0.7)
+          }
         }
 
         .hero-button{

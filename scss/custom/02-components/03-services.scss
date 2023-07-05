@@ -1,3 +1,45 @@
 .services-block{
-    
+  .card-background{
+    min-height: 300px;
+    position: relative;
+
+    .card{
+      width: 100%;
+      text-align: center;
+      background-color: inherit;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 0;
+
+      .service-img{
+        width: 65px;
+        height: 65px;
+        margin: 0 auto;
+
+        svg{
+          width: 100%;
+          height: auto;
+          fill: white;
+        }
+      }
+
+      .card-body{
+
+        h2{
+          font-size: 18px;
+        }
+
+        p{
+          font-size: 14px;
+        }
+      }
+    }
+
+    &:nth-child(2n+1){
+      background-color: #111;
+    }
+  }
 }
