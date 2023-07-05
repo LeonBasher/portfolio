@@ -9310,6 +9310,10 @@ textarea.form-control-lg {
   src: url(../fonts/Poppins/Poppins-Light.ttf); }
 
 @font-face {
+  font-family: 'Poppins Extra Light';
+  src: url(../fonts/Poppins/Poppins-ExtraLight.ttf); }
+
+@font-face {
   font-family: 'Montserrat';
   src: url(../fonts/Montserrat/Montserrat-Medium.ttf); }
 
@@ -9464,33 +9468,42 @@ h2, .h2 {
   .about-me-section .image-col + * {
     margin-top: 0; } }
 
-.services-block .card-background {
-  min-height: 300px;
-  position: relative; }
-  .services-block .card-background .card {
-    width: 100%;
-    text-align: center;
-    background-color: inherit;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 0; }
-    .services-block .card-background .card .service-img {
-      width: 65px;
-      height: 65px;
-      margin: 0 auto; }
-      .services-block .card-background .card .service-img svg {
-        width: 100%;
-        height: auto;
-        fill: white; }
-    .services-block .card-background .card .card-body h2, .services-block .card-background .card .card-body .h2 {
-      font-size: 18px; }
-    .services-block .card-background .card .card-body p {
-      font-size: 14px; }
-  .services-block .card-background:nth-child(2n+1) {
-    background-color: #111; }
+.services-block .row {
+  margin: 0; }
+  .services-block .row .card-background {
+    min-height: 300px;
+    position: relative;
+    cursor: pointer; }
+    .services-block .row .card-background:hover .card .service-img svg {
+      transform: scale(1.2); }
+    .services-block .row .card-background .card {
+      width: 100%;
+      text-align: center;
+      background-color: inherit;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 0;
+      text-transform: capitalize; }
+      .services-block .row .card-background .card .service-img {
+        width: 65px;
+        height: 65px;
+        margin: 0 auto; }
+        .services-block .row .card-background .card .service-img svg {
+          width: 100%;
+          height: auto;
+          fill: white;
+          transition: 600ms; }
+      .services-block .row .card-background .card .card-body h2, .services-block .row .card-background .card .card-body .h2 {
+        font-size: 18px; }
+      .services-block .row .card-background .card .card-body p {
+        font-size: 14px;
+        font-family: 'Poppins Extra Light';
+        line-height: 25px; }
+    .services-block .row .card-background:nth-child(2n+1) {
+      background-color: #111; }
 
 a.btn {
   transition: 500ms; }

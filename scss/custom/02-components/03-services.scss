@@ -1,45 +1,64 @@
 .services-block{
-  .card-background{
-    min-height: 300px;
-    position: relative;
+  .row{
+    margin: 0;
 
-    .card{
-      width: 100%;
-      text-align: center;
-      background-color: inherit;
-      color: white;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border: 0;
+    .card-background{
+      min-height: 300px;
+      position: relative;
+      cursor: pointer;
 
-      .service-img{
-        width: 65px;
-        height: 65px;
-        margin: 0 auto;
-
-        svg{
-          width: 100%;
-          height: auto;
-          fill: white;
+      &:hover{
+        .card{
+          .service-img{
+            svg{
+              transform: scale(1.2);
+            }
+          }
         }
       }
-
-      .card-body{
-
-        h2{
-          font-size: 18px;
+  
+      .card{
+        width: 100%;
+        text-align: center;
+        background-color: inherit;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 0;
+        text-transform: capitalize;
+  
+        .service-img{
+          width: 65px;
+          height: 65px;
+          margin: 0 auto;
+  
+          svg{
+            width: 100%;
+            height: auto;
+            fill: white;
+            transition: 600ms;
+          }
         }
-
-        p{
-          font-size: 14px;
+  
+        .card-body{
+  
+          h2{
+            font-size: 18px;
+          }
+  
+          p{
+            font-size: 14px;
+            font-family: 'Poppins Extra Light';
+            line-height: 25px;
+          }
         }
       }
-    }
-
-    &:nth-child(2n+1){
-      background-color: #111;
+  
+      &:nth-child(2n+1){
+        background-color: #111;
+      }
     }
   }
 }
